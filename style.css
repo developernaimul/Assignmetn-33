@@ -1,0 +1,154 @@
+body{
+font-family: 'Spartan', sans-serif;
+}
+img{
+    max-width: 100%;
+}
+
+.header{
+    background:#e0e0e0;
+}
+
+ul.primary-menu li{
+    display: inline-block;
+    position: relative;
+}
+ul.primary-menu li a{
+    display: inline-block;
+    text-decoration: none;
+    padding: 20px;
+    color: #000;
+    font-weight: 500;
+}
+
+/* Before */
+
+ul.primary-menu li a {
+    position: relative;
+}
+
+ul.primary-menu li a::after {
+	content: "";
+	position: absolute;
+	top: 94%;
+	left: 16px;
+	width: 0;
+	height: 6%;
+	background: #3763eb;
+    transition: .5s;
+}
+ul.primary-menu li:hover > a::after{
+    width: 63%;
+}
+.hover-active{
+    position: relative;
+}
+ul.primary-menu li a.hover-active::after {
+	content: "";
+	position: absolute;
+	top: 94%;
+	left: 16px;
+	width: 63%;
+	height: 6%;
+	background: #3763eb;
+}
+
+/* Dropdown Menu CSS */
+ul.primary-menu li{
+    position: relative;
+}
+ul.primary-menu li ul{
+    position: absolute;
+    top: 107%;
+    left: 16px;
+    width: 220px;
+    background: #fff;
+    padding-left: 0;
+    padding: 13px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .5s ease-in-out;
+    box-shadow: 0 0 15px 0 rgba(0,0,0,.2);
+    z-index: 1;
+}
+ul.primary-menu li:hover ul{
+    opacity: 1;
+    visibility: visible;
+    top: 101%;
+}
+ul.primary-menu li ul li{
+    display: block;
+}
+ul.primary-menu li ul li a{
+    background: #3763eb;
+    display: block;
+    padding: 10px 0 10px 30px;
+    color: #fff;
+    border-radius: 5px;
+}
+ul.primary-menu li ul li a::after{
+    display: none;
+}
+.header-button a{
+    display: inline-block;
+    padding: 12px 24px;
+    background: #fff;
+    color: #3763eb;
+    font-size: 16px;
+    font-weight: 500;
+    border: none;
+    margin-left: 20px;
+}
+
+/* Bannar CSS */
+
+.banner-image-hidden{
+    overflow: hidden;
+}
+.bannar-img{
+   width: 700px;
+   height: 700px;
+   border-radius: 50%;
+   overflow: hidden;
+   position: relative;
+   top: -146px;
+   left: 40px;
+}
+.bannar-img img{
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.arrow-up{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+.arrow-up span{
+    background: #3763eb;
+    height: 50px;
+    width: 50px;
+    display: inline-block;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 50%;
+}
+.arrow-up span i{
+    color: #fff;
+    font-size: 30px;
+}
